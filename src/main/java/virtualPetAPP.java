@@ -61,26 +61,26 @@ public class virtualPetAPP {
 		 
 		 if(userSelection == 1) {
 			 System.out.println("\n Feeding " + kittyName); 
-			 virtualPet.hunger = VirtualPet.petFeeding(fedFood);
-			 System.out.println("This lowered Kitty's hunger which increased it's satisfaction level to: " + VirtualPet.hunger + ", " + kittyName + " looks full.");	
+			 virtualPet.hunger = virtualPet.petFeeding(fedFood);
+			 System.out.println("This lowered Kitty's hunger which increased it's satisfaction level to: " + virtualPet.hunger + ", " + kittyName + " looks full.");	
 			 System.out.println("\n  Let's check on " + kittyName + " in a little while....\n");
 		 }
 		 else if (userSelection == 2) {
 			 System.out.println("\n Putting " + kittyName + " to sleep...... look, how cute...now we can wait awhile\n");
-			 virtualPet.tired = VirtualPet.petSleeping(petSlept);
-			 System.out.println("This lowered " + kittyName + "'s sleepyness which increased it's satisfaction level to: " + VirtualPet.tired + ", " + kittyName + " seems rested.");
+			 virtualPet.tired = virtualPet.petSleeping(petSlept);
+			 System.out.println("This lowered " + kittyName + "'s sleepyness which increased it's satisfaction level to: " + virtualPet.tired + ", " + kittyName + " seems rested.");
 			 System.out.println("\n  Let's check on Kitty in a little while....\n");
 		 }
 		 else if (userSelection == 3) {
 		     System.out.println("\n Giving " + kittyName + " some water");
-		     virtualPet.thirst = VirtualPet.petWatering(petWatered);
-		     System.out.println("This lowered " + kittyName + "'s thirst which increased it's satisfaction level to: " + VirtualPet.thirst + ", " + kittyName + " is content.");
+		     virtualPet.thirst = virtualPet.petWatering(petWatered);
+		     System.out.println("This lowered " + kittyName + "'s thirst which increased it's satisfaction level to: " + virtualPet.thirst + ", " + kittyName + " is content.");
 		     System.out.println("\n  Let's check on Kitty in a little while....\n");
 		 }
 	     else if (userSelection == 4) {
-	    	 virtualPet.boredom = VirtualPet.petPlaying(funTime);
+	    	 virtualPet.boredom = virtualPet.petPlaying(funTime);
 	    	 System.out.println("\n Playing with " + kittyName + " \n  Let's check on Kitty in a little while....\n");
-	    	 System.out.println("This raised " + kittyName + "'s happiness which increased it's satisfaction level to: " + VirtualPet.boredom + ", " + kittyName + " enjoyed that.");
+	    	 System.out.println("This raised " + kittyName + "'s happiness which increased it's satisfaction level to: " + virtualPet.boredom + ", " + kittyName + " enjoyed that.");
 	    	 
 	     }
 	     else if (userSelection == 5) {

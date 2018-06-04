@@ -1,10 +1,10 @@
 public class VirtualPet {
 
 	
-	public static int hunger;
-	public static int tired;
-	public static int thirst;
-	public static int boredom;
+	public int hunger;
+	public int tired;
+	public int thirst;
+	public int boredom;
 	
 
 	public VirtualPet(int hunger, int tired, int thirst, int boredom) {
@@ -21,22 +21,22 @@ public class VirtualPet {
 		tired = tired - 10;
 	}
 
-	public static int petFeeding(int fedFood) {
+	public int petFeeding(int fedFood) {
 	hunger = hunger + fedFood;
 	return hunger ;
 	}
 		
-	public static int petSleeping(int petSlept) {
+	public int petSleeping(int petSlept) {
 	    tired = tired + petSlept;
 	    return tired;
 		}
 	
-	public static int petWatering(int petWatered) {
+	public int petWatering(int petWatered) {
 		thirst = thirst + petWatered;
 		return thirst;
 		}
 	
-	public static int petPlaying(int funTime) {
+	public int petPlaying(int funTime) {
 		boredom = boredom + funTime;
 		return boredom;
 	 }
